@@ -1,0 +1,1 @@
+/nix/store/90h6k8ylkgn81k10190v5c9ldyjpzgl9-gcc-wrapper-12.3.0/bin/gcc -rdynamic CMakeFiles/clox.dir/src/chunk.c.o CMakeFiles/clox.dir/src/common.c.o CMakeFiles/clox.dir/src/debug.c.o CMakeFiles/clox.dir/src/main.c.o CMakeFiles/clox.dir/src/memory.c.o CMakeFiles/clox.dir/src/value.c.o CMakeFiles/clox.dir/src/vm.c.o -o /home/abrar/projects/clox/bin/clox  -lm 
