@@ -32,7 +32,7 @@ static bool isDigit(char c)
 
 static bool isAtEnd()
 {
-    return *scanner.current == "\0";
+    return *scanner.current == '\0';
 }
 
 static char advance()
@@ -98,7 +98,7 @@ static void skipWhitespace()
             advance();
             break;
         case '/':
-            if (peekNext() == "/") {
+            if (peekNext() == '/') {
                 while (peek() != '\n' && !isAtEnd())
                     advance();
             } else {
@@ -119,7 +119,7 @@ static TokenType checkKeyword(int start, int length, const char* rest, TokenType
     return TOKEN_IDENTIFIER;
 }
 
-static TokenType identiferType() {
+static TokenType identifierType() {
     switch (scanner.start[0]) {
         case 'a': return checkKeyword(1, 2, "nd", TOKEN_AND);
         case 'c': return checkKeyword(1, 4, "lass", TOKEN_CLASS);
@@ -223,16 +223,16 @@ Token scanToken()
         return makeToken(TOKEN_SLASH);
     case '!':
         return makeToken(
-            match("=") ? TOKEN_BANG_EQUAL : TOKEN_BANG);
+            match('=') ? TOKEN_BANG_EQUAL : TOKEN_BANG);
     case '=':
         return makeToken(
-            match("=") ? TOKEN_EQUAL_EQUAL : TOKEN_EQUAL);
+            match('=') ? TOKEN_EQUAL_EQUAL : TOKEN_EQUAL);
     case '<':
         return makeToken(
-            match("=") ? TOKEN_LESS : TOKEN_LESS_EQUAL);
+            match('=') ? TOKEN_LESS : TOKEN_LESS_EQUAL);
     case '>':
         return makeToken(
-            match("=") ? TOKEN_GREATER : TOKEN_GREATER_EQUAL);
+            match('=') ? TOKEN_GREATER : TOKEN_GREATER_EQUAL);
     case '"':
         return string();
     }
