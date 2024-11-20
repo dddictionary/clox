@@ -3,6 +3,9 @@
         "memory.h": "c",
         "debug.h": "c",
         "chunk.h": "c",
-        "common.h": "c"
+        "common.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "scanner.h": "c"
     }
 }
