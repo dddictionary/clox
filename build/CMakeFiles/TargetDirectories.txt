@@ -1,4 +1,0 @@
-/home/abrar/projects/clox/build/CMakeFiles/clox.dir
-/home/abrar/projects/clox/build/CMakeFiles/run.dir
-/home/abrar/projects/clox/build/CMakeFiles/edit_cache.dir
-/home/abrar/projects/clox/build/CMakeFiles/rebuild_cache.dir
