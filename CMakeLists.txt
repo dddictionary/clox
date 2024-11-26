@@ -8,6 +8,11 @@ set(
     90
 )
 
+set(
+  CMAKE_EXPORT_COMPILE_COMMANDS 
+  on
+)
+
 set (
 	CMAKE_BINARY_DIR
 	"${CMAKE_SOURCE_DIR}/build"
